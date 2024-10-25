@@ -2,6 +2,19 @@
 
 A tool that analyzes an author's writing style from their WordPress.com blog posts and helps generate new content that mimics their unique voice.
 
+![Project Pipeline](mimic_author_style.png)
+*Pipeline diagram showing the flow from WordPress.com API through style analysis to final content generation*
+
+## How It Works
+
+The tool follows a four-stage pipeline as shown in the diagram above:
+
+1. **Data Collection**: Fetches posts and metadata from WordPress.com API
+2. **Content Classification**: Uses local LLM to filter out confidential content
+3. **Style Analysis**: Leverages Claude to generate comprehensive style instructions
+4. **Style Application**: Applies captured style patterns to new content
+
+
 ## Project Structure
 
 - `src/`: Contains the source code for the project
@@ -69,6 +82,40 @@ Applies the generated style instructions to new content. The notebook:
 - Leverages Claude 3.5 to rewrite content
 - Maintains technical accuracy while matching author's voice
 - Saves the style-applied output
+
+## Use Cases
+
+### Content Creation and Editing
+- Writing assistants that adapt to your team's voice
+- Draft refinement while maintaining consistent style
+- Technical documentation with consistent tone across teams
+- Blog post generation matching established author voices
+
+### Marketing and Communications
+- Content generation for different brand personas
+- Consistent messaging across multiple channels
+- Newsletter and marketing email writing
+- Campaign content that maintains brand voice
+
+### Learning and Development
+- Style analysis for writing improvement
+- Understanding different writing approaches
+- Learning from experienced writers' patterns
+- Continuous feedback on writing habits
+
+### Localization and Accessibility
+- Style-aware content adaptation
+- Maintaining voice consistency in translations
+- Adapting technical content for different audiences
+- Accessibility-focused content rewrites
+
+## Benefits and Insights
+
+- **Style Preservation**: Captures and maintains unique writing voices while generating new content
+- **Learning Tool**: Helps understand and learn from different writing styles
+- **Efficiency**: Streamlines content creation while maintaining consistency
+- **Flexibility**: Adapts to different writing styles and content types
+- **Quality Control**: Ensures consistent voice across multiple pieces of content
 
 ## Note on Data Privacy
 
